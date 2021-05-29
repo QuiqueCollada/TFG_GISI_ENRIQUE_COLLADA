@@ -50,7 +50,7 @@ Si utiliza Windows
 
 MANUAL AVANZADO PARA LA VISUALIZACIÓN Y EXTRACCIÓN DE CARACTERÍSTICAS DE FICHEROS NIFTI
 
-Para ejecutar los siguientes scrips, deberá tener instalado Matlab y FSL en su ordenador.
+Para ejecutar los siguientes scripts, deberá tener instalado Matlab y FSL en su ordenador, además de contar con los ficheros NIFTI de resonancia magnética de un paciente.
 
 1. Procesar los ficheros nifti de la lesión con el ejecutable de matlab "main_topography.m"
 
