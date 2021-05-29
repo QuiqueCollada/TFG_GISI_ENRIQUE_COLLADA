@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<link rel="stylesheet" href="myreport.css">
+    <meta charset="UTF-8"/>
+    <title>{{ title }}</title>
+</head>
+<body>
+
+   	<img src="./ImagenesPortada/Cabecera.png" alt="Logo CEU" style="width:100%">
+
+	<div class="document_title">
+		<h1>{{ document_title }}</h1>
+	</div>
+	<img src="./ImagenesPortada/captura_pantalla_resonancia.jpg" alt="Resonacia"/>	
+	<div style="page-break-after: always"></div>
+
+	<h1>Imágenes de la lesión talámica en T1, T2, SWAN y FLAIR</h1>
+	<figure>
+		<img class="cover" src="./Img_lesion/ImagenT1_crop.png"/>
+	</figure>
+	<figure>
+		<img class="cover" src="./Img_lesion/ImagenT2_crop.png"/>
+	</figure>
+		<figure>
+		<img class="cover" src="./Img_lesion/ImagenSWAN_crop.png"/>
+	</figure>
+	<figure>
+		<img class="cover" src="./Img_lesion/ImagenFLAIR_crop.png"/>
+<!--		<figcaption><p><b>Imagen FlAIR</b></p></figcaption> -->
+	<div style="page-break-after: always"></div>
+	
+	<h1>Imágenes de la lesión talámica en T1, T2, SWAN y FLAIR con formato mosaico</h1>
+	</figure>
+		<figure>
+		<img class="cover" src="./Img_lesion/MosaicoT1_crop.png"/>
+	</figure>
+		</figure>
+		<figure>
+		<img class="cover" src="./Img_lesion/MosaicoT2_crop.png"/>
+	</figure>
+	</figure>
+		<figure>
+		<img class="cover" src="./Img_lesion/MosaicoSWAN_crop.png"/>
+	</figure>
+	</figure>
+		<figure>
+		<img class="cover" src="./Img_lesion/MosaicoFLAIR_crop.png"/>
+	</figure>
+
+	<div style="page-break-after: always"></div>
+
+	<h1>Características de la lesión<h1>
+
+	<table class="center" border="1">
+  		<tr>
+   	 		<td>  Volumen  </td>
+    		<td>  {{volumen}} mm  </td>
+  		</tr>
+  		<tr>
+    		<td>  Distancia PC  </td>
+    		<td>  {{dPC}} mm  </td>
+  		</tr>
+  		<tr>
+    		<td>  Distancia PC (%)  </td>
+    		<td>  {{dPCPerc}}%  </td>
+  		</tr>
+  		 <tr>
+    		<td>  Lateralidad  </td>
+    		<td>  {{latICL}} mm  </td>
+  		</tr>
+  		 <tr>
+    		<td>  Distancia inferior del plano AC-PC  </td>
+    		<td>  {{dInfACPC}} mm  </td>
+  		</tr>
+  		<tr>
+    		<td>  VIM ocupado por la lesión  </td>
+    		<td>  {{VIMoccupied}}%  </td>
+  		</tr>
+  		<tr>
+    		<td>  Lesión en VIM  </td>
+    		<td>  {{LesioninVIM}}%  </td>
+  		</tr>
+	</table>
+
+	<h1>Comparación estadística con una población de pacientes a los que se ha aplicado el tratamiento</h1>
+
+	<figure>
+		<img class="cover" src="./Graficos/volumen_mejoria.png"/>
+	</figure>
+	<figure>
+		<img class="cover" src="./Graficos/lateralidad_mejoria.png"/>
+	</figure>
+	<figure>
+		<img class="cover" src="./Graficos/dPC_mejoria.png"/>
+	</figure>
+	<figure>
+		<img class="cover" src="./Graficos/dPCperc_mejoria.png"/>
+	</figure>
+	<figure>
+		<img class="cover" src="./Graficos/dInfACPC_mejoria.png"/>
+	</figure>
+	<figure>
+		<img class="cover" src="./Graficos/VIMoccupied_mejoria.png"/>
+	</figure>
+	<figure>
+		<img class="cover" src="./Graficos/LesioninVIM_mejoria.png"/>
+	</figure>
+
+	<div style="page-break-after: always"></div>
+
+	<h1>Relación y comparación entre las características de la lesión talámica y la aparición de ataxia y parestesia a los 3 meses </h1>
+
+	<figure>
+		<img class="cover" src="./Graficos/volumen_ataxia_parestesia.png"/>
+	</figure>
+	<figure>
+		<img class="cover" src="./Graficos/latICL_ataxia_parestesia.png"/>
+	</figure>
+	<figure>
+		<img class="cover" src="./Graficos/dPC_ataxia_parestesia.png"/>
+	</figure>
+	<figure>
+		<img class="cover" src="./Graficos/dPCPerc_ataxia_parestesia.png"/>
+	</figure>
+	<figure>
+		<img class="cover" src="./Graficos/dInfACPC_ataxia_parestesia.png"/>
+	</figure>
+	<figure>
+		<img class="cover" src="./Graficos/VIMoccupied_ataxia_parestesia.png"/>
+	</figure>
+	<figure>
+		<img class="cover" src="./Graficos/LesioninVIM_ataxia_parestesia.png"/>
+	</figure>
+
+</body>
+</html>
