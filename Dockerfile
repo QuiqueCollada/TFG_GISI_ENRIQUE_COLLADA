@@ -32,4 +32,4 @@ WORKDIR /usr/src/app
 
 COPY . .
 
-CMD python3 main.py && python3 git_output.py
+CMD python3 main.py
