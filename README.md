@@ -24,7 +24,7 @@ Si utiliza Windows
 	2. Desde el directorio del proyecto, cree la imagen docker y ejecútela:
 
 		docker build -t tfgecollada .
-		docker run -t -d tfgecollada
+		docker run tfgecollada
 
 	3. Consulte el ID de su contenedor:
 
