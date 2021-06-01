@@ -6,7 +6,7 @@ Si utiliza macOS o Linux
 
 	1. Abra el Terminal y, en el directorio del proyecto, ejecute el comando "sh build.sh". Este script construirá la imagen docker y la ejecutará, extrayendo los ficheros report.pdf y report.html del entorno virtual a su máquina. Al final de su ejecución deberá introducir por teclado "y" o "n" si desea eliminar la caché de docker.
 
-	2. Abra el informe clínico que se encuentra en "output_files/report.pdf" y en formato HTML en su directorio actual ("report.html").
+	2. Cumpruebe y abra el informe clínico que se encuentra en "output_files/report.pdf".
 
 Si utiliza Windows
 
@@ -30,10 +30,9 @@ Si utiliza Windows
 
 		docker ps -a -q
 
-	4. Espere, al menos, 15 segundos para completar la ejecución del script "main.py" en el contenedor, copie el CONTAINER ID, introdúzcalo en los siguientes comandos y ejecútelos:
+	4. Copie el CONTAINER ID, introdúzcalo en el siguiente comando y ejecútelo:
 
 		docker cp <CONTAINER ID>:/usr/src/app/report.pdf output_files
-		docker cp <CONTAINER ID>:/usr/src/app/report.html .
 
 	5. Pare y elimine todos los procesos, imágenes y caché de docker:
 
@@ -43,7 +42,7 @@ Si utiliza Windows
 		docker rmi <IMAGE ID>
 		docker builder prune
 
-	6. Abra el informe clínico que se encuentra en "output_files/report.pdf" y en formato HTML en su directorio actual ("report.html").
+	6. Compruebe y abra el informe clínico que se encuentra en "output_files/report.pdf".
 
 
 (INFORMACIÓN EXTRA AL ENTREGABLE EVALUABLE)
